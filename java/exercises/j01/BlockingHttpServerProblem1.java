@@ -1,4 +1,5 @@
-import javax.net.ssl.HttpsURLConnection;
+package j01;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +7,6 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.http.HttpHeaders;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 
