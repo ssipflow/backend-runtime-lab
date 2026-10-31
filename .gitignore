@@ -1,0 +1,38 @@
+# OS and IDE files
+.DS_Store
+.idea/
+*.iml
+.vscode/
+
+# Java build output
+*.class
+.gradle/
+build/
+target/
+out/
+
+# Go build and test output
+bin/
+*.test
+coverage.out
+
+# Node.js / TypeScript
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local environment (keep example configuration)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs and profiling output
+*.log
+*.jfr
+*.hprof
+*.pprof
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
