@@ -33,7 +33,7 @@ import java.time.LocalDateTime;
  * - /slow 처리 중 /fast 요청이 들어왔을 때 동작을 관찰할 수 있습니다.
  * - 그 결과를 Blocking I/O와 단일 스레드 실행 구조로 설명할 수 있습니다.
  */
-public class BlockingHttpServerProblem1 {
+public class BlockingHttpServerExercise01 {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
