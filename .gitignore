@@ -37,3 +37,4 @@ coverage/
 *.cpuprofile
 *.heapprofile
 *.heapsnapshot
+*.txt
