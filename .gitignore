@@ -30,6 +30,7 @@ coverage/
 
 # Logs and profiling output
 *.log
+*.log*
 *.jfr
 *.hprof
 *.pprof
