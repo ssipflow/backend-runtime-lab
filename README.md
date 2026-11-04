@@ -22,6 +22,21 @@ Java, Go, TypeScript/JavaScript의 런타임 내부 동작과 머신 리소스 �
 
 Spring Boot, Express, NestJS 등의 웹 프레임워크는 사용하지 않습니다. 각 언어의 표준 라이브러리를 우선 활용합니다.
 
+## 실행·검증 안내
+
+모든 실행 명령은 저장소 루트 기준입니다. JDK 버전, 컴파일, 포트, 관찰 도구와 실행 산출물은 [Java 실행 안내](java/README.md)에서 확인할 수 있습니다.
+
+| 챕터 | 예제 실행 | 연습문제 실행·검증 |
+|---|---|---|
+| J-01 Blocking I/O | [예제](java/examples/j01/README.md) | [순차 처리](java/exercises/j01/README.md) |
+| J-02 Thread-per-Connection | [예제](java/examples/j02/README.md) | [활성 Worker](java/exercises/j02/README.md) |
+| J-03 Thread Pool | [예제](java/examples/j03/README.md) | [큐·거절](java/exercises/j03/README.md) |
+| J-04 Heap·GC | [예제](java/examples/j04/README.md) | [참조 유지·해제·OOM](java/exercises/j04/README.md) |
+| J-05 CPU·대기 | [예제](java/examples/j05/README.md) | [CPU·타이머·I/O](java/exercises/j05/README.md) |
+| J-06 NIO Selector | [TCP Echo](java/examples/j06/README.md) | [NIO HTTP·분할 요청](java/exercises/j06/README.md) |
+
+문서의 예상 결과는 재실행 시 확인할 기준입니다. CPU 사용률과 응답 시간은 실행 환경에 따라 달라집니다.
+
 ## Curriculum
 
 ### 1. Java — JVM & Server Internals

@@ -4,9 +4,10 @@
 
 ## 공통 환경
 
-- J-01~J-04와 J-05 샘플: JDK 17 이상. 전체 실습을 같은 환경에서 실행하려면 JDK 21 이상을 사용한다.
+- J-01~J-04, J-05 샘플, J-06: JDK 17 이상. 전체 실습을 같은 환경에서 실행하려면 JDK 21 이상을 사용한다.
 - J-05 지연 TCP 서버: Thread.ofPlatform API를 사용하므로 JDK 21 이상.
 - JDK의 java, javac, jps, jcmd와 curl을 PATH에서 사용할 수 있어야 한다.
+- J-06은 Python 3(연결·분할 요청 스크립트)와 nc(TCP 예제)가 추가로 필요하다.
 - 요청 스크립트는 Bash로 실행한다. top·ps 예시는 macOS 기준이다.
 - 각 README의 명령은 별도 표시가 없으면 저장소 루트에서 실행한다. 컴파일은 -d로 패키지 디렉터리를 만들고 실행 시 패키지를 포함한 클래스명을 사용한다.
 
@@ -24,12 +25,13 @@ javac -version
 | J-03 Thread Pool | [예제](examples/j03/README.md) | [큐·거절](exercises/j03/README.md) |
 | J-04 Heap·GC | [예제](examples/j04/README.md) | [참조 유지·해제·OOM](exercises/j04/README.md) |
 | J-05 CPU·대기 | [예제](examples/j05/README.md) | [CPU·타이머·I/O 비교](exercises/j05/README.md) |
+| J-06 NIO Selector | [TCP Echo](examples/j06/README.md) | [NIO HTTP·분할 요청](exercises/j06/README.md) |
 
 J-05에는 별도 [지연 TCP 서버](exercises/j05subTCPServer/README.md)가 필요하다.
 
 ## 포트와 종료
 
-J-01~J-03 및 J-05의 HTTP 서버는 모두 8080을 사용한다. 한 번에 하나만 실행한다. J-05 보조 서버는 9090을 사용한다. 서버 실행 터미널은 열어 두고 요청·관찰은 다른 터미널에서 한다. 중단은 각 실행 터미널의 Ctrl+C이며, 정상 종료 절차를 검증하는 명령은 아니다. Address already in use가 나면 앞서 실행한 서버를 먼저 종료한다.
+J-01~J-03, J-05의 HTTP 서버와 J-06의 TCP 예제·HTTP 연습문제는 모두 8080을 사용한다. 한 번에 하나만 실행한다. J-05 보조 서버는 9090을 사용한다. 서버 실행 터미널은 열어 두고 요청·관찰은 다른 터미널에서 한다. 중단은 각 실행 터미널의 Ctrl+C이며, 정상 종료 절차를 검증하는 명령은 아니다. Address already in use가 나면 앞서 실행한 서버를 먼저 종료한다.
 
 ## JVM 관찰
 
