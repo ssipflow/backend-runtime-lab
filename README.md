@@ -34,6 +34,7 @@ Spring Boot, Express, NestJS 등의 웹 프레임워크는 사용하지 않습�
 | J-04 Heap·GC | [예제](java/examples/j04/README.md) | [참조 유지·해제·OOM](java/exercises/j04/README.md) |
 | J-05 CPU·대기 | [예제](java/examples/j05/README.md) | [CPU·타이머·I/O](java/exercises/j05/README.md) |
 | J-06 NIO Selector | [TCP Echo](java/examples/j06/README.md) | [NIO HTTP·분할 요청](java/exercises/j06/README.md) |
+| J-07 JVM 진단 | [진단 샘플](java/examples/j07/README.md) | [Thread·Heap·JFR 분석](java/exercises/j07/README.md) |
 
 문서의 예상 결과는 재실행 시 확인할 기준입니다. CPU 사용률과 응답 시간은 실행 환경에 따라 달라집니다.
 
