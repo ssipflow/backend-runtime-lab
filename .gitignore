@@ -15,6 +15,7 @@ out/
 bin/
 *.test
 coverage.out
+*.bin
 
 # Node.js / TypeScript
 node_modules/
