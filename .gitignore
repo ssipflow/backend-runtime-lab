@@ -39,3 +39,4 @@ coverage/
 *.heapprofile
 *.heapsnapshot
 *.txt
+*.pb.gz
